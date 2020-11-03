@@ -1,15 +1,7 @@
-package com.mvol.entity;
+package com.clientui.beans;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+public class VolBean {
 
-@Entity
-public class Vol {
-
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 
 	private String titre;
@@ -20,11 +12,11 @@ public class Vol {
 
 	private Double prix;
 
-	public Vol() {
+	public VolBean() {
 		super();
 	}
 
-	public Vol(int id, String titre, String description, String image, Double prix) {
+	public VolBean(int id, String titre, String description, String image, Double prix) {
 		super();
 		this.id = id;
 		this.titre = titre;
@@ -78,13 +70,4 @@ public class Vol {
 		return "Vol [id=" + id + ", titre=" + titre + ", description=" + description + ", image=" + image + ", prix="
 				+ prix + "]";
 	}
-
-	public Vol(String titre, String description) {
-		super();
-		this.titre = titre;
-		this.description = description;
-	}
-	
-	
-
 }
