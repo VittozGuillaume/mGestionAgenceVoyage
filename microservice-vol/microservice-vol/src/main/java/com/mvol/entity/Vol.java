@@ -21,6 +21,7 @@ public class Vol {
 	private Double prix;
 
 	public Vol() {
+		super();
 	}
 
 	public Vol(int id, String titre, String description, String image, Double prix) {

@@ -4,49 +4,36 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Example;
+import org.springframework.stereotype.Service;
 
 import com.mpaiement.entity.Paiement;
 import com.mpaiement.repository.IPaiementRepository;
 import com.mpaiement.service.IPaiementService;
 
+@Service
 public class PaiementServiceImpl implements IPaiementService {
 
 	@Autowired
 	private IPaiementRepository repo;
-	
+
 	@Override
-	public Paiement create(Paiement paiement) {
-		if (repo.exists(Example.of(paiement))) {
-			return null;
-		} else {
-			return repo.save(paiement);
-		}
+	public void delete(Paiement paiement) {
+		repo.delete(paiement);
 	}
 
 	@Override
-	public Paiement update(Paiement paiement) {
-		if (repo.existsById(paiement.getId())) {
-			return repo.save(paiement);
-		} else {
-			return null;
-		}
-	}
-
-	@Override
-	public void delete(int id) {
-		repo.deleteById(id);
-	}
-
-	@Override
-	public Paiement readById(int id) {
-		Optional<Paiement> op = repo.findById(id);
-		return op.get();
-	}
-
-	@Override
-	public List<Paiement> readAll() {
+	public List<Paiement> findAll() {
 		return repo.findAll();
+	}
+
+	@Override
+	public Optional<Paiement> findOne(Long id) {
+		return repo.findById(id);
+	}
+
+	@Override
+	public Paiement save(Paiement paiement) {
+		return repo.save(paiement);
 	}
 
 }

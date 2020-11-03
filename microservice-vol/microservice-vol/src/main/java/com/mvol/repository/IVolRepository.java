@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.mvol.entity.Vol;
 
 @Repository
-public interface IVolRepository extends JpaRepository<Vol, Integer> {
+public interface IVolRepository extends JpaRepository<Vol, Long> {
 
 }

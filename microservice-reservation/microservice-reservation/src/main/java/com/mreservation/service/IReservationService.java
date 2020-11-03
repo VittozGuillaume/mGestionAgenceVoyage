@@ -1,18 +1,17 @@
 package com.mreservation.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.mreservation.entity.Reservation;
 
 public interface IReservationService {
 
-	public Reservation create(Reservation reservation);
+	public Reservation save(Reservation reservation);
 
-	public Reservation update(Reservation reservation);
+	public void delete(Reservation reservation);
 
-	public void delete(int id);
+	public List<Reservation> findAll();
 
-	public Reservation readById(int id);
-
-	public List<Reservation> readAll();
+	public Optional<Reservation> findOne(Long id);
 }

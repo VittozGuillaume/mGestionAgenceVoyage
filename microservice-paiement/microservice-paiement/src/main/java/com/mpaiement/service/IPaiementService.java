@@ -1,18 +1,17 @@
 package com.mpaiement.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.mpaiement.entity.Paiement;
 
 public interface IPaiementService {
 
-	public Paiement create(Paiement paiement);
+	public Paiement save(Paiement paiement);
 
-	public Paiement update(Paiement paiement);
+	public void delete(Paiement paiement);
 
-	public void delete(int id);
+	public List<Paiement> findAll();
 
-	public Paiement readById(int id);
-
-	public List<Paiement> readAll();
+	public Optional<Paiement> findOne(Long id);
 }
