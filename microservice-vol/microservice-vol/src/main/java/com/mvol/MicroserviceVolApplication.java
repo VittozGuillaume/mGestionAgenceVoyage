@@ -1,4 +1,4 @@
-package com.mvol.microservicevol;
+package com.mvol;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

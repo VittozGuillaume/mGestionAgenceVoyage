@@ -1,4 +1,4 @@
-package com.mreservation.microservicereservation.entity;
+package com.mreservation.entity;
 
 import java.util.Date;
 

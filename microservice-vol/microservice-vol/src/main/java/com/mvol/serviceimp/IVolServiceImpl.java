@@ -1,4 +1,4 @@
-package com.mvol.microservicevol.serviceimp;
+package com.mvol.serviceimp;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,9 +6,9 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 
-import com.mvol.microservicevol.entity.Vol;
-import com.mvol.microservicevol.repository.IVolRepository;
-import com.mvol.microservicevol.service.IVolService;
+import com.mvol.entity.Vol;
+import com.mvol.repository.IVolRepository;
+import com.mvol.service.IVolService;
 
 public class IVolServiceImpl implements IVolService {
 

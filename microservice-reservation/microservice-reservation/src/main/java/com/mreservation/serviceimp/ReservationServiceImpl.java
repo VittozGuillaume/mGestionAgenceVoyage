@@ -1,4 +1,4 @@
-package com.mreservation.microservicereservation.serviceimp;
+package com.mreservation.serviceimp;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,9 +6,9 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 
-import com.mreservation.microservicereservation.entity.Reservation;
-import com.mreservation.microservicereservation.repository.IReservationRepository;
-import com.mreservation.microservicereservation.service.IReservationService;
+import com.mreservation.entity.Reservation;
+import com.mreservation.repository.IReservationRepository;
+import com.mreservation.service.IReservationService;
 
 public class ReservationServiceImpl implements IReservationService {
 

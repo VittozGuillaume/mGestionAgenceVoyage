@@ -1,8 +1,8 @@
-package com.mreservation.microservicereservation.service;
+package com.mreservation.service;
 
 import java.util.List;
 
-import com.mreservation.microservicereservation.entity.Reservation;
+import com.mreservation.entity.Reservation;
 
 public interface IReservationService {
 

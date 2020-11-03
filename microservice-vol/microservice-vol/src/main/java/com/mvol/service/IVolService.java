@@ -1,8 +1,8 @@
-package com.mvol.microservicevol.service;
+package com.mvol.service;
 
 import java.util.List;
 
-import com.mvol.microservicevol.entity.Vol;
+import com.mvol.entity.Vol;
 
 public interface IVolService {
 

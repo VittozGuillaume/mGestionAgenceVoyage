@@ -1,4 +1,4 @@
-package com.mvol.microservicevol.entity;
+package com.mvol.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

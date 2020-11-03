@@ -1,4 +1,4 @@
-package com.mpaiement.microservicepaiement.serviceimp;
+package com.mpaiement.serviceimp;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,9 +6,9 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 
-import com.mpaiement.microservicepaiement.entity.Paiement;
-import com.mpaiement.microservicepaiement.repository.IPaiementRepository;
-import com.mpaiement.microservicepaiement.service.IPaiementService;
+import com.mpaiement.entity.Paiement;
+import com.mpaiement.repository.IPaiementRepository;
+import com.mpaiement.service.IPaiementService;
 
 public class PaiementServiceImpl implements IPaiementService {
 

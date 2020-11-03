@@ -1,4 +1,4 @@
-package com.mpaiement.microservicepaiement.entity;
+package com.mpaiement.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
