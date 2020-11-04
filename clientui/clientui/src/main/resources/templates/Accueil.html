@@ -13,6 +13,15 @@
 			<p th:text="${v.description}"></p>
 		</div>
 	</div>
+	<p>_________________________________________________________</p>
+	<div class="row">
+		<div th:each="r : ${reservations}" class="col-md-4">
+			<h2 th:text="${r.vollid}"></h2>
+			<p>Quantité : </p>
+			<p th:text="${r.quantite}"></p>
+			<p th:text="${r.reservationPayee}"></p>
+		</div>
+	</div>
 	<script type="text/javascript"
 		src="webjars/bootstap/4.0.0-2/js/bootstrap.min.js"></script>
 </body>

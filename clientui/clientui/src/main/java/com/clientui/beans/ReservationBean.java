@@ -1,25 +1,17 @@
-package com.mreservation.entity;
+package com.clientui.beans;
 
 import java.util.Date;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+public class ReservationBean {
 
-@Entity
-public class Reservation {
-
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	
+
 	private Integer volld;
-	
+
 	private Date dateReservation;
-	
+
 	private Integer quantite;
-	
+
 	private Boolean reservationPayee;
 
 	public int getId() {
@@ -68,7 +60,7 @@ public class Reservation {
 				+ quantite + ", reservationPayee=" + reservationPayee + "]";
 	}
 
-	public Reservation(int id, Integer volld, Date dateReservation, Integer quantite, Boolean reservationPayee) {
+	public ReservationBean(int id, Integer volld, Date dateReservation, Integer quantite, Boolean reservationPayee) {
 		super();
 		this.id = id;
 		this.volld = volld;
@@ -77,16 +69,8 @@ public class Reservation {
 		this.reservationPayee = reservationPayee;
 	}
 
-	public Reservation() {
+	public ReservationBean() {
 		super();
 	}
 
-	public Reservation(Integer volld, Integer quantite, Boolean reservationPayee) {
-		super();
-		this.volld = volld;
-		this.quantite = quantite;
-		this.reservationPayee = reservationPayee;
-	}
-	
-	
 }
