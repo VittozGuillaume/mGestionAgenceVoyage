@@ -73,4 +73,11 @@ public class ReservationBean {
 		super();
 	}
 
+	public ReservationBean(Integer volld, Integer quantite, Boolean reservationPayee) {
+		super();
+		this.volld = volld;
+		this.quantite = quantite;
+		this.reservationPayee = reservationPayee;
+	}
+
 }
